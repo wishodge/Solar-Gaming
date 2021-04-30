@@ -1,0 +1,311 @@
+body /*This part covers the entire home page, be careful!*/
+{
+  text-align: center;
+  font-family: rockwell,arial,courier;
+  font-size: 24px;
+  background-color: black;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*HOMEPAGE CODE STARTS HERE*/
+/*Menu bar code starts here -WH*/
+
+.navbar 
+{
+  overflow: hidden;
+  background-color: #ff9900;
+}
+
+.navbar a 
+{
+  float:left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.dropdown 
+{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+  background-color:#b36b00;
+}
+
+.droplinks
+{
+  display: none;
+  position: absolute;
+  background-color: #ff9900;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.droplinks a 
+{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.droplinks a:hover 
+{
+  background-color: black;
+}
+
+.dropdown:hover .droplinks 
+{
+  display: block;
+}
+
+/*Menu bar code ends here -WH*/
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Rockwell;
+}
+
+header{
+	background-image: url(../11.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+footer{
+	background-image: url(../16.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul
+{
+	float: right;
+	list-style-type: none;
+}
+
+ul li
+{
+	display: inline-flex;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: gold;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+	background-color: white;
+	color: black;
+}
+
+ul li .active a{
+	background-color: white;
+	color: blue;
+}
+
+.logo img{
+	float: left;
+	width: 120px;
+	height: auto;
+}
+
+.welcome-text{
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  margin: 20% 23%;
+  text-align: center;
+}
+
+.welcome-text h1{
+  text-align: center;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.welcome-text a:hover{
+  background: #fff;
+  color: gold;
+  transition: 0.6s ease;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.container{
+  color: gold;
+}
+
+
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+} 
+
+#footer {
+    display: table;
+    max-width: 60em;
+    padding: 1.25em;
+    margin: 0 auto;
+    border: 0.062em solid gold;
+    background-color: white;
+    color:  black;
+ }
+
+#footer div {
+    display: table-cell;
+    width: 33.333%;
+    padding: 1em;
+    text-align: center;
+}
+
+#footer div h2 {
+    text-align: center;
+ }
+
+#footer div:nth-of-type(2) {
+    border-right: 0.062em dotted #999;
+    border-left: 0.062em dotted #999;
+ }
+
+#footer div:nth-of-type(3) {
+    text-align: left;
+ }
+
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 5px;
+  background: darkcyan;
+  transition: 0.3 ease;
+}
+
+
+.columns2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.column2 {
+  flex: 1;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 1px;
+  background: darkcyan;
+  transition: 0.3 ease;
+}
+
+
+.columns3 {
+  display: flex;   
+  flex-flow:row wrap;
+  justify-content: center;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.column3 {
+  flex: 1;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 10px;
+  background: darkcyan;
+  transition: 0.3 ease;
+}
+
+@media screen and(max-width: 980px) {
+  .columns .column{
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+   .columns .column{
+    flex-basis: 40%;
+    margin: 0;
+   }
+    .columns .column:nth-last-child(2) {
+      margin-right: 0;
+}
+
+
+@media screen and(max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+
+
+/*pc page ends*/
